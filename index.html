@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Pizza Form</h1>
+  <form class="form" autocomplete="off" method="POST">
+    <input type="text" name="name" placeholder="Name" id="pizzaName" class="fields" required>
+    <input type="price" name="price" placeholder="Price(must be a number)" id="price" class="fields"
+      pattern="[0-9]*[.]?[0-9]+" required>
+    <select id="heat" class="fields">
+      <optgroup label="Heat">
+        <option value="Heat- Not selected" selected>Heat- Not selected</option>
+        <option value="Light">Light</option>
+        <option value="Medium">Medium</option>
+        <option value="Hot">Hot</option>
+      </optgroup>
+      <input type="text" name="toppings" placeholder="Toppings" id="toppings" class="fields" required>
+      <select id="image" class="fields">
+        <optgroup label="Pizza Image">
+          <option value="images/unnamed.png" label="Image- not selected" selected>Image- Not selected</option>
+          <option value="images/keto_pizza_v.jpg" id="img1" label="Pizza Image 1"></option>
+          <option value="images/margherita-pizza-500x375.jpg" id=img2 label="Pizza Image 2"></option>
+          <option value="images/pizza_fresca.jpg" id="img3" label="Pizza Image 3"></option>
+        </optgroup>
+        <input type="submit" value="Submit" class="btn"></input>
+        <input type="reset" value="Reset" class="btn"></input>
+  </form>
+  <div class="row">
+    <div class="column">
+      <span>1</span>
+      <img title="Title Tag Goes Here" src="images/keto_pizza_v.jpg" alt="Pizza1">
+      <div class="overlay">Pizza Image 1</div>
+    </div>
+    <div class="column">
+      <span>2</span>
+      <img src="images/margherita-pizza-500x375.jpg" alt="Pizza2">
+      <div class="overlay">Pizza Image 2</div>
+    </div>
+    <div class="column">
+      <span>3</span>
+      <img src="images/pizza_fresca.jpg" alt="Pizza3">
+      <div class="overlay">Pizza Image 3</div>
+    </div>
+  </div>
+  </div>
+  <h1 id="pizzaMenuHeader">Pizza Menu</h1>
+  <table id="pizzaList">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</body>
+<script src="script.js">
+</script>
+</html>

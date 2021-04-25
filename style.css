@@ -1,0 +1,139 @@
+*{
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+input{
+    display: block;
+    vertical-align: middle;
+}
+
+.fields{
+    margin-top:20px;
+    font-size: 15px;
+    border: none;
+    border-bottom: solid rgba(92, 86, 86, 0.459) 1px;
+    width: 200px;
+    text-align: start;
+    outline-style: none;
+}
+.fields:focus{
+    border-bottom: solid 1px #e2b111;}
+    
+h1{
+   margin: 30px 30px;
+}
+
+h3{
+    color: rgb(90, 88, 88);
+    margin: 30px 20px;
+}
+
+td{
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+
+  }
+  
+  tr {
+    border-bottom: 1pt solid black;
+  }
+  .bck{
+      background-color: brown;
+  }
+  #deletePizza{
+    border: none;
+    outline: none;
+    background: rgba(226, 64, 14, 0.397);
+    color: #413636;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    width: 70px;
+}
+#deletePizza:hover{
+    cursor: pointer;
+    background-color: #e0452ad7;
+    color: aliceblue;
+}
+
+  .btn{
+    border: none;
+    outline: none;
+    background: rgba(13, 177, 8, 0.397);
+    color: #413636;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    width: 200px;
+  }
+  .btn:hover{
+    cursor: pointer;
+    background-color: #00b327d7;
+    color: aliceblue;
+  }
+
+img {    
+display: block;
+width: 250px;
+height: 200px;
+object-fit: cover;
+}
+  .row {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .column {
+    padding-top: 40px;
+    position: relative;
+    width: 50%;
+    max-width: 250px;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+ 
+  .column:hover .overlay {
+    opacity: 1;
+  }
+
+  .imgMenu{
+      width: 140px;
+      height: 130px;
+      object-fit: contain;
+  }
+
+  #sortName, #sortPrice, #sortHeat{
+    background: honeydew;
+  }
+
+  #sortName:hover, #sortPrice:hover, #sortHeat:hover{
+    color: green;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  span{
+   color: rgba(92, 86, 86, 0.459)
+  }
